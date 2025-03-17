@@ -59,7 +59,7 @@
       <section class="section order-section">
         <div class="container">
           <h1 class="order-title">Effective Solutions for Your Business</h1>
-          <button class="order-btn" type="button">Order Service</button>
+          <button class="submit-button" type="button">Order Service</button>
         </div>
       </section>
       <!-- 2nd section Features-->
@@ -597,7 +597,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="button order-btn footer-subscribe-btn" type="submit">
+            <button class="submit-button footer-subscribe-btn" type="submit">
               Subscribe
               <svg class="footer-send-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -606,8 +606,101 @@
           </form>
         </div>
       </div>
-      </div>
     </footer>
     <!-- end oof footer -->
+    <!-- #beginodal -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="modal-btn close-modal" type="button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-capture">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="leave-contacts-form" name="leave-contacts-form">
+          <div class="form-wrapper">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label class="form-label" for="userPhone">Phone</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="tel"
+                id="userPhone"
+                name="userPhone"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label class="form-label" for="userEmail">Email</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="email"
+                id="userEmail"
+                name="userEmail"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper comment-wrapper">
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea
+              class="form-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="form-agreement">
+            <input
+              id="user-privacy"
+              class="user-privacy-checkbox visually-hidden"
+              name="user-privacy"
+              type="checkbox"
+              value="true"
+            />
+            <label class="form-agreement-label" for="user-privacy">
+              <span class="checkbox">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="form-agreement-link"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+
+          <button class="submit-button form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- end modal -->
   </body>
 </html>
